@@ -1,0 +1,389 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7 ]> <html lang="en" class="ie ie6"> <![endif]--> 
+<!--[if IE 7 ]>	<html lang="en" class="ie ie7"> <![endif]--> 
+<!--[if IE 8 ]>	<html lang="en" class="ie ie8"> <![endif]--> 
+<!--[if IE 9 ]>	<html lang="en" class="ie ie9"> <![endif]--> 
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Daxiang Design</title>
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:regular,bold"> 
+<link rel="stylesheet" type="text/css" href="js/vegas/jquery.vegas.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<script type="text/javascript" src="js/jquery-1.5.2.min.js"></script>
+<script type="text/javascript" src="js/vegas/jquery.vegas.js"></script>
+<script type="text/javascript" src="js/global.js"></script>
+<script>
+$( function() {
+	$.vegas( 'slideshow', {
+		delay: 10000,
+		backgrounds: [
+			{ src: 'images/background6.jpg', fade: 2000 },
+			{ src: 'images/background5.jpg', fade: 2000 },
+			{ src: 'images/background4.jpg', fade: 2000 },
+			{ src: 'images/background3.jpg', fade: 2000 },
+			{ src: 'images/background2.jpg', fade: 2000 },
+			{ src: 'images/background1.jpg', fade: 2000 }
+		]
+	} )( 'overlay' );
+
+
+    $( '#menubtn_aboutus' ).click( function() {
+		$( '#overlay, #aboutus' ).fadeIn();
+		return false;
+	});
+
+	$( '#overlay, #aboutus' ).click( function() {
+		$( '#overlay, #aboutus' ).fadeOut();
+		return false;
+	});
+	
+	$( '#overlay a, #menubtn_aboutus' ).click( function(e) {
+		e.stopPropagation();
+	});
+
+
+
+    $( '#menubtn_services' ).click( function() {
+		$( '#overlay, #services' ).fadeIn();
+		return false;
+	});
+
+	$( '#overlay, #services' ).click( function() {
+		$( '#overlay, #services' ).fadeOut();
+		return false;
+	});
+	
+	$( '#overlay a, #menubtn_services' ).click( function(e) {
+		e.stopPropagation();
+	});
+
+
+    $( '#menubtn_portfolio' ).click( function() {
+		$( '#overlay, #portfolio' ).fadeIn();
+		return false;
+	});
+
+	$( '#overlay, #portfolio' ).click( function() {
+		$( '#overlay, #portfolio' ).fadeOut();
+		return false;
+	});
+	
+	$( '#overlay a, #menubtn_aboutus' ).click( function(e) {
+		e.stopPropagation();
+	});
+
+
+
+    $( '#menubtn_contactus' ).click( function() {
+		$( '#overlay, #contactus' ).fadeIn();
+		return false;
+	});
+
+	$( '#overlay, #contactus' ).click( function() {
+		$( '#overlay, #contactus' ).fadeOut();
+		return false;
+	});
+	
+	$( '#overlay a, #menubtn_contactus' ).click( function(e) {
+		e.stopPropagation();
+	});
+
+
+	$( '.mailto' ).click( function() {
+		var a = $( this ).attr( 'href' );
+		e = a.replace( '#', '' ).replace( '|', '@' ) + '.com';
+		document.location = 'ma' + 'il' + 'to:' + e + "?subject=[Vegas] I'd like to hire you!";
+		e.preventDefault;
+		return false;
+	});
+	
+} );
+</script>
+</head>
+<body id="home">
+
+<div id="menudiv" class="curved">
+    <ul class="menubar">
+        <li class="menubtn">
+            <a id="menubtn_logo" class="menubtn_a">
+                <span class="menubtn_span">
+                    <img src="images/menubar_logo.png"/>
+                </span>
+            </a>
+        </li>
+        <li class="menubtn">
+            <a id="menubtn_home" class="menubtn_a" href="#home">
+                <span class="menubtn_span">HOME</span>
+            </a>
+        </li>
+        <li class="menubtn">
+            <a id="menubtn_aboutus" class="menubtn_a" href="#aboutus">
+                <span class="menubtn_span">ABOUT US</span>
+            </a>
+        </li>
+        <li class="menubtn">
+            <a id="menubtn_services" class="menubtn_a" href="#services">
+                <span class="menubtn_span">SERVICES</span>
+            </a>
+        </li>
+        <li class="menubtn">
+            <a id="menubtn_portfolio" class="menubtn_a" href="#portfolio">
+                <span class="menubtn_span">PORTFOLIO</span>
+            </a>
+        </li>
+        <li class="menubtn">
+            <a id="menubtn_contactus" class="menubtn_a" href="#contactus">
+                <span class="menubtn_span">CONTACT US</span>
+            </a>
+        </li>
+
+</div>
+
+<div id="overlay"></div>
+
+<div id="aboutus">
+    <div class="first">
+        <h3>About Us</h3>
+        <h4></h4>
+        <p>DaxiangDesign provids professional model making service, it belongs to Hangzhou Mingzhan Networking Technology Co., which is devoted </p>
+        <p>Dual licensed under the MIT and GPL licenses. In short, do whatever you want with it, as long as you include a visible attribution to <a href="http://jaysalvat.com">Jay Salvat</a>.</p>
+        <p><a href="#jay.salvat|gmail" class="mailto">Contact me</a> if you need some help with this plugin. But please note <strong>the plugin is free. I'm not</strong> ;)</p>
+    </div>
+
+    <div class="last">
+        <h3>关于我们</h3>
+        <h4></h4>
+        <p>大象设计是一家提供专业模型设计制作的公司，是中国首家提供专业3D打印服务的公司——杭州铭展网络科技有限公司旗下，专注为建筑设计、城市规划、室内设计、景观设计等领域提供企业级服务的专业品牌。</p>
+        <h4></h4>
+        <p>大象设计使用全球领先的“ZCorp3D打印”快速成型技术，为我们的客户带来应对高复杂度、高速响应、高精度模型制作需求时的可靠解决方案</p>
+        <img src="http://www.3d-print.cn/static/images/logo.gif" />
+        <!--
+        <img src="http://www.3d-print.cn/static/images/magicfirm.png" />
+        <img src="http://www.zcorp.com/images/3_header_03.gif" />
+        -->
+    </div>
+</div>
+
+<div id="services">
+    <div>
+        <h3>服务</h3>
+        <p>
+            3D打印模型是您的建筑创意实现可视化与无障碍沟通最好方法。
+            3D打印拥有速度快，大小灵活，成本经济等优点，是制作建筑模型的理想之选。
+        </p>
+
+        <p>
+            使用我们的彩色3D打印服务，建筑商和建筑师们可以按照一定的大小比例，制作或简单或复杂的模型。
+            这些模型比CAD建模、图片打印等方式更为清晰。我们可以在更短的时间内，为您呈现更多细节，节约更多成本，并且更快敲定建造方案。 
+        </p>
+
+
+        <p>
+            建筑师、工程师和承建商(AEC)在整个概念设计和建造过程中，都可以使用3D打印模型。 
+            绝大多数的CAD数据能够直接打印成模型，其所能呈现的大量细节能帮助设计者不断修正设计理念。
+            3D打印技术能够制作纯白或者彩色的模型，是制作复杂的几何图形最快、最经济有效的方法。 
+        </p>
+
+        <p>
+            对于买家来说，任何二维或三维虚拟图像都并不足以说明一切，而一个3D实体模型，可大大有助于澄清概念设计。
+            这样可以节省时间，并在早期更快地消除误解。
+            最有力的例子是，当你手握一个3D模型，你可以拿掉屋顶，让室内地板的布局跃然眼前。
+            这样的一个模型无疑最能吸引买家的眼球。因此我们的模型不仅能在设计过程中帮助您，甚至能帮您完成交易。 
+        </p>
+
+
+        <p>
+            如果你是一个专业的内部结构建筑师，你仍然可以从我们的模型中得益。将我们的建筑模型作为您设计过程的起点，将大大节约时间和经费。
+            纯白色的模型可以让您随意发挥进行上色，并放置在传统模型沙盘上。
+            赶紧把我们的3D打印技术与您的艺术相结合吧，并把我们的模型和传统元素一起放在沙盘上，得到您想要的最好效果。
+        </p>
+
+
+        <h3>标准项目</h3>
+        <ul>
+            <li>230 x 150 x 150 mm    单色： 2100 CNY   彩色：2500 CNY</li>
+            <li>320 x 230 x 85 mm      单色： 3800 CNY   彩色：4200 CNY </li>
+            <li>320 x 230 x 150 mm    单色： 4200 CNY   彩色：5000 CNY </li>
+        </ul>
+
+
+        <h3>大型项目</h3>
+        <p>单体建筑模型大于350mm尺寸的，请联系我们。我们提供大型项目的整套模型方案。</p>
+
+    </div>
+</div>
+
+<div id="portfolio">
+
+	<div class="column main"> 
+
+	  <h2>深圳城市\建筑双年展案例</h2>
+
+	  <p>
+	  </p><img src="images/modelcase/szshuangnian.jpg">
+
+	    <ul class="bigpoints">
+	      <li>模型名称： 建筑设计模型</li>
+	      <li>设计工具： 犀牛</li>
+	      <li>材料： 单色石膏打印</li>
+	      <li>设计大小： 25cm</li>
+	      <li>制作费用： 3000 CNY</li>
+	      <li>日期：     2011年11月</li>
+	    </ul>
+	  <p></p>
+
+	  <div class="rule"></div>  
+
+	  <h2>天津大学建筑设计案例</h2>
+
+	  <p>
+	  </p><img src="images/modelcase/tianda.jpg">
+
+	    <ul class="bigpoints">
+	      <li>模型名称： 建筑设计模型</li>
+	      <li>设计工具： 犀牛</li>
+	      <li>材料： 单色石膏打印</li>
+	      <li>设计大小： 25cm</li>
+	      <li>制作费用： 3000 CNY</li>
+	      <li>日期：     2011年11月</li>
+	    </ul>
+	  <p></p>
+
+	  <div class="rule"></div>  
+
+	  <h2>中国美院建筑设计案例</h2>
+
+	  <img src="images/modelcase/004.jpg"> <img src="images/modelcase/005.jpg">
+
+	    <ul class="bigpoints">
+	      <li>模型名称： 建筑设计模型</li>
+	      <li>设计工具： 3ds Max</li>
+	      <li>材料： 单色石膏打印</li>
+	      <li>设计大小： 35cm</li>
+	      <li>制作费用： 1800 - 5000 CNY</li>
+	      <li>日期：     2010年11月</li>
+	    </ul>
+	  <p></p>
+
+	  <div class="rule"></div>
+
+	  <h2>深圳 建筑设计案例</h2>
+	  <p>
+	  </p><img src="images/modelcase/sz001.jpg">
+
+	    <ul class="bigpoints">
+	      <li>模型名称： 建筑设计模型</li>
+	      <li>设计工具： 犀牛</li>
+	      <li>材料： 尼龙打印</li>
+	      <li>设计大小： 35cm</li>
+	      <li>制作费用： 5000 CNY</li>
+	      <li>日期：     2011年6月</li>
+	    </ul>
+	  <p></p>
+
+	  <div class="rule"></div>
+
+	  <h2>国家建筑院建筑设计案例</h2>
+	  <p>
+	  </p><img src="images/modelcase/na001.jpg">
+
+	    <ul class="bigpoints">
+	      <li>模型名称： 建筑设计模型(图片为局部)</li>
+	      <li>设计工具： 犀牛</li>
+	      <li>材料： 单色石膏打印</li>
+	      <li>设计大小： 80cm</li>
+	      <li>制作费用： 10000 CNY</li>
+	      <li>日期：     2011年5月</li>
+	    </ul>
+	  <p></p>  
+
+	  <div class="rule"></div>
+
+	  <h2>建筑彩色单体案例</h2>
+	  <p>
+	  </p><img src="images/modelcase/co001.jpg">
+
+	    <ul class="bigpoints">
+	      <li>模型名称： 建筑设计模型</li>
+	      <li>设计工具： 3Ds Max</li>
+	      <li>材料： 彩色打印</li>
+	      <li>设计大小： 12cm</li>
+	      <li>制作费用： 800 CNY</li>
+	      <li>日期：     2011年3月</li>
+	    </ul>
+	  <p></p>
+
+	  <div class="rule"></div>
+
+	  <h2>古建筑设计案例</h2>
+	  <p>
+	  </p><img src="images/modelcase/gu001.jpg"> 
+
+	    <ul class="bigpoints">
+	      <li>模型名称： 建筑设计模型</li>
+	      <li>设计工具： 犀牛</li>
+	      <li>材料： 单色打印</li>
+	      <li>设计大小： 15cm</li>
+	      <li>制作费用： 800 CNY</li>
+	      <li>日期：     2011年6月</li>
+	    </ul>
+	  <p></p>  
+
+	  <div class="rule"></div>
+
+	  <h2>建筑设计学生作品案例</h2>
+
+	  <p>
+	  </p><img src="images/modelcase/st001.jpg"> <br>
+
+	    <ul class="bigpoints">
+	      <li>模型名称： 建筑设计模型</li>
+	      <li>设计工具： 3ds Max</li>
+	      <li>材料： 尼龙打印</li>
+	      <li>设计大小： 25cm</li>
+	      <li>制作费用： 3000 CNY</li>
+	      <li>日期：     2011年5月</li>
+	    </ul>
+	  <p></p>
+
+	  <div class="rule"></div>  
+
+
+	  <h2>城市规划打印案例</h2>
+	  <p>
+	  </p><img src="images/modelcase/004.jpg">
+
+	    <ul class="bigpoints">
+	      <li>模型名称： Mini城市</li>
+	      <li>设计工具： 3dsMax</li>
+	      <li>材料：彩色打印</li>
+	      <li>设计大小： 高：5.6 cm 宽：20.3 cm 长：20.3 cm</li>
+	      <li>制作费用： 3000 CNY</li>
+	      <li>日期：     2011年1月</li>
+	    </ul>
+	  <p></p>
+
+	  </div>
+
+</div>
+
+<div id="contactus">
+    <div class="first">
+        <h3>Contact Us</h3>
+        <h4>Tel: 400-2345678</h4>
+        <p>Yongjia Road 50, Xuhui District, Shanghai, CHINA</p>
+        <p>Tianyun Garden 17-2-802, North Qiutao Road 252, Hangzhou, CHINA</p>
+    </div>
+    <div class="last">
+        <h3>联系我们</h3>
+        <h4>电话: 400-2345678</h4>
+        <p>上海：徐汇区 永嘉路50号（靠近陕西南路）</p>
+        <p>杭州：江干区 秋涛北路252号 三华天运花园17幢2单元802室</p>
+    </div>
+</div>
+
+
+</body>
+</html>

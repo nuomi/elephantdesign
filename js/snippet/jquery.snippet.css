@@ -1,0 +1,168 @@
+/*---------- golden Styles ---------*/
+pre {
+}
+.sh_vegas {
+}
+.sh_vegas li {
+	margin:5px 0px;
+}
+.sh_vegas * {
+	font:11px "Courier New", Courier, monospace !important;
+	padding:0;
+	margin:0;
+	background:none;
+	border:0;
+}
+.sh_vegas .sh_sourceCode {
+	color:#FFF;
+	font-weight:normal;
+	font-style:normal;
+}
+.sh_vegas .sh_sourceCode .sh_keyword {
+	color:#DDD;
+	font-weight:bold;
+	font-style:normal;
+}
+.sh_vegas .sh_sourceCode .sh_type {
+	color:#EEE;
+	font-weight:normal;
+	font-style:normal;
+}
+.sh_vegas .sh_sourceCode .sh_string {
+	color:#CF0;
+	font-weight:normal;
+	font-style:normal;
+}
+.sh_vegas .sh_sourceCode .sh_regexp {
+	color:#C90;
+	font-weight:normal;
+	font-style:normal;
+}
+.sh_vegas .sh_sourceCode .sh_specialchar {
+	color:#C90;
+	font-weight:normal;
+	font-style:normal;
+}
+.sh_vegas .sh_sourceCode .sh_comment {
+	color:#999;
+	font-weight:normal;
+}
+.sh_vegas .sh_sourceCode .sh_number {
+	color:#fff;
+	font-weight:normal;
+	font-style:normal;
+}
+.sh_vegas .sh_sourceCode .sh_preproc {
+	color:#CCC;
+	font-weight:normal;
+	font-style:normal;
+}
+.sh_vegas .sh_sourceCode .sh_symbol {
+	color:#CCC;
+	font-weight:normal;
+	font-style:normal;
+}
+.sh_vegas .sh_sourceCode .sh_function {
+	color:#CF0;
+	font-weight:bold;
+	font-style:normal;
+}
+.sh_vegas .sh_sourceCode .sh_cbracket {
+	color:#ababab;
+	font-weight:normal;
+	font-style:normal;
+}
+.sh_vegas .sh_sourceCode .sh_url {
+	font-weight:normal;
+	font-style:normal;
+}
+.sh_vegas .sh_sourceCode .sh_date {
+	color:#ffed8a;
+	font-weight:bold;
+	font-style:normal;
+}
+.sh_vegas .sh_sourceCode .sh_time {
+	color:#ffed8a;
+	font-weight:bold;
+	font-style:normal;
+}
+.sh_vegas .sh_sourceCode .sh_file {
+	color:#ffed8a;
+	font-weight:bold;
+	font-style:normal;
+}
+.sh_vegas .sh_sourceCode .sh_ip {
+	color:#f00;
+	font-weight:normal;
+	font-style:normal;
+}
+.sh_vegas .sh_sourceCode .sh_name {
+	color:#f00;
+	font-weight:normal;
+	font-style:normal;
+}
+.sh_vegas .sh_sourceCode .sh_variable {
+	color:#dedede;
+	font-weight:bold;
+	font-style:normal;
+}
+.sh_vegas .sh_sourceCode .sh_oldfile {
+	color:#f00;
+	font-weight:normal;
+	font-style:normal;
+}
+.sh_vegas .sh_sourceCode .sh_newfile {
+	color:#f00;
+	font-weight:normal;
+	font-style:normal;
+}
+.sh_vegas .sh_sourceCode .sh_difflines {
+	color:#ffed8a;
+	font-weight:bold;
+	font-style:normal;
+}
+.sh_vegas .sh_sourceCode .sh_selector {
+	color:#dedede;
+	font-weight:bold;
+	font-style:normal;
+}
+.sh_vegas .sh_sourceCode .sh_property {
+	color:#ffed8a;
+	font-weight:bold;
+	font-style:normal;
+}
+.sh_vegas .sh_sourceCode .sh_value {
+	color:#f00;
+	font-weight:normal;
+	font-style:normal;
+}
+
+
+
+/*-------- Snippet Base Styles ----------*/
+.snippet-wrap {
+	position:relative;
+}
+.snippet-wrap .snippet-menu,
+.snippet-wrap .snippet-hide {
+	position:absolute;
+	top:4px;
+	right:0px;
+	font-size:.9em;
+	z-index:1;
+	background-color:transparent;
+}
+.snippet-wrap .snippet-menu pre,
+.snippet-wrap .snippet-hide pre {
+	background-color:transparent;
+	margin:0;
+	padding:0;
+}
+.snippet-wrap .snippet-menu a,
+.snippet-wrap .snippet-hide a {
+	padding:5px;
+	text-decoration:none;
+	background:#000;
+}
+
+

@@ -1,7 +1,18 @@
-permalink: /:categories/:title.html
+# This is the default format. 
+# For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink: /:categories/:year/:month/:day/:title 
 auto: true
 pygments: true
 var:
   archive_path: /archive.html
   categories_path : /categories.html
   tags_path : /tags.html
+
+production_url : http://www.daxiangdesign.com # or your custom domain name
+title :  Daxiang Design
+
+author :
+  name : Nuomi Q
+  email : newchar@gmail.com
+  github : nuomi
+  twitter : nuomi
