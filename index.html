@@ -1,85 +1,41 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset='utf-8'>
+---
+layout: page
+title: Home
+---
 
-  <title>nuomi/elephantdesign @ GitHub</title>
-
-  <style type="text/css">
-    body {
-      margin-top: 1.0em;
-      background-color: #db7caa;
-      font-family: Helvetica, Arial, FreeSans, san-serif;
-      color: #000000;
-    }
-    #container {
-      margin: 0 auto;
-      width: 700px;
-    }
-    h1 { font-size: 3.8em; color: #248355; margin-bottom: 3px; }
-    h1 .small { font-size: 0.4em; }
-    h1 a { text-decoration: none }
-    h2 { font-size: 1.5em; color: #248355; }
-    h3 { text-align: center; color: #248355; }
-    a { color: #248355; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
-    pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
-  </style>
-</head>
-
-<body>
-  <a href="https://github.com/nuomi/elephantdesign"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
-
-  <div id="container">
-
-    <div class="download">
-      <a href="https://github.com/nuomi/elephantdesign/zipball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/zip.png"></a>
-      <a href="https://github.com/nuomi/elephantdesign/tarball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/tar.png"></a>
+<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="js/jquery.zrssfeed.min.js"></script>
+<link type="text/css" href="css/homepage.css" rel="stylesheet"/>
+<link type="text/css" href="css/jquery.zrssfeed.css" rel="stylesheet"/>
+<div id="about">
+    <div id="aboutus_cn" class="gray">
+        <div id="about_title">关于我们</div>
+    这是一个由艺术家们建立的空间,旨在推广城市中的慢生活方式。在这里你能参与创造和分享艺术,体验轻松的创意氛围。无论您希望发掘自己的 创造力、与艺术零距离接触、或只想在忙碌生活中偷闲片刻,都能在这迷人的作坊里找到惊喜和激励。 
     </div>
-
-    <h1><a href="https://github.com/nuomi/elephantdesign">elephantdesign</a>
-      <span class="small">by <a href="https://github.com/nuomi">nuomi</a></span></h1>
-
-    <div class="description">
-      
+    <div id="aboutus_en" class="gray">
+        <div id="about_title">About Us</div>
+    A creative space founded by a group of artists who create, share and teach art. We promote slow-paced urban lifestyle through providing a creative atmosphere and relaxing experiences. Whether you want to discover the artist in you, to have close encounter with art, or to simply retreat from a moment of your busy life, you will be surprised and motivated by anything goes on at this charming studio.
     </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-      <h2>Contact</h2>
-      <p> (nuomiease@163.com)<br/>      </p>
-    
-
-    <h2>Download</h2>
-    <p>
-      You can download this project in either
-      <a href="https://github.com/nuomi/elephantdesign/zipball/master">zip</a> or
-      <a href="https://github.com/nuomi/elephantdesign/tarball/master">tar formats.
-    </p>
-    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
-      by running:
-      <pre>$ git clone git://github.com/nuomi/elephantdesign</pre>
-    </p>
-
-    <div class="footer">
-      get the source code on GitHub : <a href="https://github.com/nuomi/elephantdesign">nuomi/elephantdesign</a>
+</div>
+<div id="main-bg">
+    <div id="homepage_bg"><img src="images/homepage_bg.jpg"></div>
+    <div id="newsupdate">
+        <div class="title">最新动态&nbsp;News&nbsp;Update</div>
+        <div id="event_photos_btn">
+            <a id="eventphotos" href="eventphotos.html"><img src="images/event_photos_btn.jpg"/></a>
+        </div> 
+        <div id="event_area"> </div>
     </div>
+    <div id="clear"></div>
+</div>
 
-  </div>
+<script>
+    $("#event_area").rssfeed( 'http://art-life-studio.com/sinarss2.php?id=2408282181', {limit:15 , header:false, content:false, titletag:'p' });
+    $("#eventphotos").click(function(){
+        $("#main").load("eventphotos.html");
+    });
 
-</body>
-</html>
+    $("#event_area").html("Loading...");
+    /*
+    */
+</script>

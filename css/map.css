@@ -1,0 +1,32 @@
+#about {
+    width: 70%;
+    margin-left: 80px;
+}
+
+#aboutus_cn {
+    margin: 10px auto;
+}
+
+#aboutus_en {
+    margin: 10px auto;
+}
+
+#about_title {
+    font-size: 15px;
+}
+
+#map_area {
+    margin-left: 140px;
+    margin-top: 30px;
+    width: 70%;
+    position: relative;
+    height: 500px;
+}
+
+#map_left {
+    float: left;
+}
+
+#map_right {
+    float: right;
+}

@@ -1,0 +1,14 @@
+#gallery {
+    margin-top: 100px;
+    height: 900px;
+}
+
+#painting {
+    width: 300px;
+    height: 300px;
+    float: left;
+}
+
+#painting>h4 {
+    text-align: center;
+}

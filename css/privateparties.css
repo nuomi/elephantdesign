@@ -1,0 +1,36 @@
+#pretext {
+    position: relative;
+    width: 80%;
+    height: 120px;
+}
+
+.brown{
+    color:#733D1A;
+}
+
+#pretext_cn {
+    width: 35%;
+    float: left;
+    margin-left: 80px;
+}
+
+#pretext_en {
+    width: 35%;
+    float: left;
+    margin-left: 10px;
+}
+
+#privateparties{
+    margin-top: 20px;
+    height: 500px;
+}
+
+#painting {
+    float: left;
+    margin: 10px;
+}
+
+#painting>h4 {
+    text-align: center;
+    display: none;
+}
