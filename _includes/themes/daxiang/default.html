@@ -6,7 +6,7 @@
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>Daxiang Design</title>
+<title>{{ page.title }}</title>
 <meta http-equiv="X-UA-Compatible" content="chrome=1">
 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:regular,bold"> 
 <link rel="stylesheet" type="text/css" href="js/vegas/jquery.vegas.css">
@@ -19,12 +19,9 @@ $( function() {
 	$.vegas( 'slideshow', {
 		delay: 10000,
 		backgrounds: [
-			{ src: 'images/background6.jpg', fade: 2000 },
-			{ src: 'images/background5.jpg', fade: 2000 },
-			{ src: 'images/background4.jpg', fade: 2000 },
-			{ src: 'images/background3.jpg', fade: 2000 },
-			{ src: 'images/background2.jpg', fade: 2000 },
-			{ src: 'images/background1.jpg', fade: 2000 }
+            {% for bgimg in page.bgimgs %}
+                { src: 'images/{{ bgimg }}', fade: 2000 },
+            {% endfor %}
 		]
 	} )( 'overlay' );
 
@@ -383,6 +380,8 @@ $( function() {
         <p>杭州：江干区 秋涛北路252号 三华天运花园17幢2单元802室</p>
     </div>
 </div>
+
+{{ content }}
 
 
 </body>
